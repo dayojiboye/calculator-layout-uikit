@@ -16,7 +16,7 @@ class CustomStackView: UIStackView {
     }
     
     init(axis: String, alignment: UIStackView.Alignment, distribution: UIStackView.Distribution, spacing: CGFloat) {
-        super .init(frame: .zero)
+        super.init(frame: .zero)
         
         self.axis = axis == "vertical" ? NSLayoutConstraint.Axis.vertical : NSLayoutConstraint.Axis.horizontal
         self.alignment = alignment

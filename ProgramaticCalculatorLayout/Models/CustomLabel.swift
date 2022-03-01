@@ -25,7 +25,7 @@ class CustomLabel: UILabel {
     }
     
     init(text: String?, font: CGFloat, color: UIColor, alignment: NSTextAlignment, weight: String, backgroundColor: String) {
-        super .init(frame: .zero)
+        super.init(frame: .zero)
         self.text = text
         self.font = weight == "light" ? .systemFont(ofSize: font) : .boldSystemFont(ofSize: font)
         self.textColor = color
