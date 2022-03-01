@@ -7,16 +7,34 @@
 
 import UIKit
 
-struct CustomLabel {
-    let hexStringColor = HexStringColor()
+let hexStringColor = HexStringColor()
+
+// use sub class to define component
+class CustomLabel: UILabel {
+    // mark unnecessary init method as unavailable
+    @available(*, unavailable)
+    // override init to apply styles and constraints
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.initialize()
+    }
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
-    func renderLabel(text: String, font: CGFloat, color: UIColor, alignment: NSTextAlignment, weight: String, backgroundColor: String) -> UILabel {
-        let label = UILabel()
-        label.text = text
-        label.font = weight == "light" ? .systemFont(ofSize: font) : .boldSystemFont(ofSize: font)
-        label.textColor = color
-        label.textAlignment = alignment
-        label.backgroundColor = hexStringColor.hexStringToUIColor(hex: backgroundColor)
-        return label
+    init(text: String?, font: CGFloat, color: UIColor, alignment: NSTextAlignment, weight: String, backgroundColor: String) {
+        super .init(frame: .zero)
+        self.text = text
+        self.font = weight == "light" ? .systemFont(ofSize: font) : .boldSystemFont(ofSize: font)
+        self.textColor = color
+        self.textAlignment = alignment
+        self.backgroundColor = hexStringColor.hexStringToUIColor(hex: backgroundColor)
+        self.initialize()
+    }
+    
+    func initialize() {
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
 }

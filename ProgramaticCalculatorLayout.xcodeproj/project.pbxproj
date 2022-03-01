@@ -16,6 +16,7 @@
 		9345C8A027CC354600DD38AD /* ProgramaticCalculatorLayoutUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345C89F27CC354600DD38AD /* ProgramaticCalculatorLayoutUITestsLaunchTests.swift */; };
 		9345C8B327CC3D2C00DD38AD /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345C8B227CC3D2C00DD38AD /* CustomLabel.swift */; };
 		9345C8B527CC3D4600DD38AD /* HexStringColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345C8B427CC3D4600DD38AD /* HexStringColor.swift */; };
+		937CD47B27CE2C14001C7C08 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937CD47A27CE2C14001C7C08 /* CustomStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		9345C8B127CC3D0000DD38AD /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9345C8B227CC3D2C00DD38AD /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		9345C8B427CC3D4600DD38AD /* HexStringColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexStringColor.swift; sourceTree = "<group>"; };
+		937CD47A27CE2C14001C7C08 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				9345C8B227CC3D2C00DD38AD /* CustomLabel.swift */,
 				9345C8B427CC3D4600DD38AD /* HexStringColor.swift */,
+				937CD47A27CE2C14001C7C08 /* CustomStackView.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937CD47B27CE2C14001C7C08 /* CustomStackView.swift in Sources */,
 				9345C88127CC354400DD38AD /* ViewController.swift in Sources */,
 				9345C87D27CC354400DD38AD /* AppDelegate.swift in Sources */,
 				9345C87F27CC354400DD38AD /* SceneDelegate.swift in Sources */,
